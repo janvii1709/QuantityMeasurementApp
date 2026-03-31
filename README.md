@@ -1,65 +1,93 @@
-# Quantity Measurement App
+# 🚀 Quantity Measurement Application
 
-### ✅ UC1
-Implemented value-based equality comparison for Feet objects only, comparing measurements using overridden equals() and hashCode().
+A robust and scalable **Quantity Measurement System** developed using **Java & Spring Boot**, designed to handle multiple measurement domains including **Length, Weight, Volume, and Temperature**.
 
-### ✅ UC2
-Extended equality comparison to support both Feet and Inches, enabling cross-unit comparison (e.g., 12 inches = 1 foot).
+The application supports accurate **unit conversion**, **cross-unit comparison**, and **arithmetic operations**, following a **Use Case–driven approach (UC1–UC18)**. It evolves from core **OOP concepts** to a secure, **database-integrated backend system** with **RESTful APIs**.
 
-### ✅ UC3
-Enabled comparison between different length units by converting values to a common base unit before checking equality.
+---
 
-### ✅ UC4
-Added support for multiple length units such as inches, feet, yards, and centimeters with defined conversion factors.
+## 👤 Developer
+**Janhavi Singh**
 
-### ✅ UC5
-Implemented unit conversion functionality to convert values between supported length units.
+---
 
-### ✅ UC6
-Added addition functionality for quantities of the same unit while maintaining immutability.
+## 🧠 Use Cases (UC1 – UC18)
 
-### ✅ UC7
-Enhanced addition to support different units by converting values to a common base unit before summation.
+### 📏 Core Measurement (UC1 – UC8)
+| UC | 📌 Description |
+|----|----------------|
+| UC1 | Value-based equality for Feet objects using `equals()` and `hashCode()`. |
+| UC2 | Equality extended to support both Feet and Inches. |
+| UC3 | Cross-unit comparison using base unit conversion. |
+| UC4 | Support for multiple length units (Inch, Feet, Yard, CM). |
+| UC5 | Unit conversion across length units. |
+| UC6 | Addition for quantities of the same unit. |
+| UC7 | Addition for different units via base unit conversion. |
+| UC8 | Enforced immutability, validation, and proper equality handling. |
 
-### ✅ UC8
-Improved design by enforcing constructor validation, immutability, and correct implementation of equals() and hashCode().
+### ⚖️ Extended Measurement (UC9 – UC11)
+| UC | 📌 Description |
+|----|----------------|
+| UC9 | Weight measurement (Kg, Gram, Tonne) with conversion. |
+| UC10 | Generic Quantity class with Unit interface to support multiple categories. |
+| UC11 | Volume measurement (Litre, ML, Gallon) with conversion and operations. |
 
-### ✅ UC9
-Introduced weight measurement support with units like kilogram, gram, and pound.
-Enabled conversion and comparison of weight values using a common base unit.
+### ➕ Advanced Operations (UC12 – UC14)
+| UC | 📌 Description |
+|----|----------------|
+| UC12 | Subtraction and division operations for quantities. |
+| UC13 | Centralized arithmetic logic following DRY principles. |
+| UC14 | Temperature measurement with restricted operations and proper abstractions. |
 
-### ✅ UC10
-Implemented a generic Quantity class with a Unit interface to support multiple measurement categories.
-Improved flexibility and reusability by handling length, weight, and volume in a unified structure.
+### 🏗️ Architecture & Backend (UC15 – UC18)
+| UC | 📌 Description |
+|----|----------------|
+| UC15 | N-Tier architecture: Controller → Service → Repository. |
+| UC16 | JDBC integration with CRUD operations for database persistence. |
+| UC17 | RESTful APIs built using Spring Boot for scalable backend. |
+| UC18 | Secure authentication & authorization using Spring Security, JWT & Google OAuth2. |
 
-### ✅ UC11
-Added volume measurement support including litre, millilitre, and gallon with conversion logic.
-Enabled equality checks and addition operations across different volume units.
+---
 
-### ✅ UC12
-Implemented subtraction and division operations for quantity measurements.
-Ensured accurate results by converting values to a common base unit before performing operations.
+## 🛠️ Tech Stack
+- **Java**
+- **Spring Boot**
+- **Spring Security**
+- **JWT Authentication**
+- **OAuth2 (Google Login)**
+- **JDBC & MySQL**
+- **JUnit**
+- **Postman**
 
-### ✅ UC13
-Centralized arithmetic logic to enforce DRY principles across all quantity operations.
-Reduced code duplication by handling addition, subtraction, and division in a common utility.
+---
 
-### ✅ UC14
-Introduced temperature measurement with selective arithmetic support and measurable refactoring.
-Restricted invalid operations while improving design using a common measurable abstraction.
+## ✅ Highlights
+- Multi-domain measurement support: Length, Weight, Volume, Temperature.  
+- Clean, modular, and scalable architecture.  
+- Strong adherence to **OOP** and design principles.  
+- Secure backend with authentication and authorization.  
+- RESTful API integration for seamless frontend communication.
 
-### ✅ UC15
-Refactored the application into an N-Tier architecture by separating it into presentation, service, and data access layers.
-Improved code maintainability, scalability, and testability through clear separation of concerns.
+---
 
-### ✅ UC16
-Integrated database persistence using JDBC to store and retrieve quantity measurement data.
-Implemented CRUD operations ensuring efficient data handling and seamless interaction with the backend.
+## 🔗 GitHub Repository
+[Quantity Measurement App](https://github.com/janvii1709/QuantityMeasurementApp)
 
-### ✅ UC17
-Developed a Spring Boot backend for the Quantity Measurement application with RESTful APIs for handling measurement operations.
-Implemented layered architecture (Controller, Service, Repository) for better scalability, maintainability, and separation of concerns.
+---
 
-### ✅ UC18
-Implemented secure user authentication and authorization using Spring Security with JWT for stateless session management.
-Integrated Google OAuth2 login and developed user management features for registration, login, and profile handling.
+## ✅ Use Case Implementation Summary
+
+- **UC1 – UC2:** Implemented equality checks for Feet and Inches using `equals()` and `hashCode()`.  
+- **UC3 – UC5:** Added cross-unit comparison and conversion for multiple length units.  
+- **UC6 – UC7:** Supported addition for same and different units while maintaining immutability.  
+- **UC8:** Enforced validation, immutability, and proper equality handling.  
+- **UC9 – UC11:** Extended support to Weight and Volume with conversions and arithmetic.  
+- **UC12 – UC13:** Added subtraction and division operations with centralized arithmetic logic.  
+- **UC14:** Temperature measurement with selective arithmetic operations.  
+- **UC15 – UC17:** Developed N-Tier architecture, JDBC CRUD operations, and RESTful APIs.  
+- **UC18:** Implemented secure authentication with JWT and Google OAuth2.
+
+---
+
+## 🙏 Acknowledgement
+Thanks to **BridgeLabz** for structured learning, guidance, and inspiration.
